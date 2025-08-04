@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Voucher WiFi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #d4af37; /* kuning kehitaman */
+      padding: 10px;
+      font-size: 14px;
+    }
+    h1 {
+      text-align: center;
+      color: #ff4d4d;o
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .wifi-box {
+      background: #1a0000;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 5px rgba(255, 0, 0, 0.2);
+      font-size: 13px;
+    }
+    .arz h2 a {
+      color: #66ff66;
+      text-decoration: none;
+    }
+    .arz h2 a:hover {
+      text-decoration: underline; /* opsional saat disentuh */
+    }
+    .wahuy h2 {
+      color: #cc0000;
+      font-size: 15px;
+      margin: 0 0 5px 0;
+    }
+    .alfaruq h2 {
+      color: #66ff66;
+      font-size: 15px;
+      margin: 0 0 5px 0;
+    }
+    .zoena h2 {
+      color: #009933;
+      font-size: 15px;
+      margin: 0 0 5px 0;
+    }
+    a {
+      color: #d4af37;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    ul {
+      margin: 5px 0 0 15px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    em {
+      color: #aaaaaa;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Daftar Voucher WiFi</h1>
+
+  <div class="wifi-box arz">
+    <h2><a href="arz.html">ARZ.NET</a></h2>
+    <p>Login: <a href="http://192.20.0.1" target="_blank">Klik untuk login</a></p>
+    <ul>
+      <li>Voucher: <strong>Indah2758</strong></li>
+      <li>Voucher: <strong>Riweuh2023</strong></li>
+    </ul>
+  </div>
+
+  <div class="wifi-box wahuy">
+    <h2>WAHUY.NET</h2>
+    <p>Login: <a href="http://192.168.40.1" target="_blank">Klik untuk login</a></p>
+    <ul>
+      <li>Voucher: <strong>1T4</strong></li>
+      <li>Voucher: <em>belum</em></li>
+    </ul>
+  </div>
+
+  <div class="wifi-box alfaruq">
+    <h2>AL-FARUQ.NET</h2>
+    <p>Login: <a href="http://192.20.0.1" target="_blank">Klik untuk login</a></p>
+    <ul>
+      <li>Voucher: <em>belum</em></li>
+      <li>Voucher: <em>belum</em></li>
+    </ul>
+  </div>
+
+  <div class="wifi-box zoena">
+    <h2>ZOENA.NET</h2>
+    <p>Login: <a href="http://192.20.0.1" target="_blank">Klik untuk login</a></p>
+    <ul>
+      <li>Voucher: <em>belum</em></li>
+      <li>Voucher: <em>belum</em></li>
+    </ul>
+  </div>
+
+  <div class="footer" id="footer-info">
+    <!-- Isi otomatis oleh JavaScript -->
+  </div>
+
+  <script>
+    const bulanIndo = [
+      "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+      "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+    ];
+    const sekarang = new Date();
+    const bulan = bulanIndo[sekarang.getMonth()];
+    const tahun = sekarang.getFullYear();
+    document.getElementById("footer-info").innerText =
+      `© ${bulan} ${tahun} | HUB: 082258988041`;
+  </script>
+
+</body>
+</html>
